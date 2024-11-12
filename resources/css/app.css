@@ -1,0 +1,97 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    /* Light background color */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Header Styles */
+h1 {
+    color: #2c3e50;
+    /* Dark blue color */
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    /* Larger font size for the header */
+}
+
+/* Card Container */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Center align cards */
+}
+
+/* Card Styles */
+.card {
+    background-color: #ffffff;
+    /* White background for cards */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    /* Deeper shadow for depth */
+    margin: 15px;
+    /* Margin around cards */
+    padding: 20px;
+    /* Padding inside cards */
+    width: calc(33% - 30px);
+    /* Responsive width for three cards per row */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+/* Card Hover Effect */
+.card:hover {
+    transform: translateY(-5px);
+    /* Lift effect on hover */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    /* Increase shadow on hover */
+}
+
+/* Image Styles */
+.card img {
+    max-width: 100%;
+    /* Responsive image size */
+    border-radius: 10px;
+    /* Rounded corners for images */
+}
+
+/* Text Styles */
+.card-text {
+    font-size: 16px;
+    /* Font size for joke text */
+    color: #34495e;
+    /* Darker gray for text color */
+}
+
+/* List Styles (if applicable) */
+ul {
+    list-style-type: none;
+    /* Remove default list styling */
+    padding: 0;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 30px);
+        /* Two cards per row on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: calc(100% - 30px);
+        /* One card per row on small screens */
+        margin-bottom: 15px;
+        /* Space between cards on small screens */
+    }
+
+    h1 {
+        font-size: 2em;
+        /* Smaller header font size on small screens */
+    }
+}
